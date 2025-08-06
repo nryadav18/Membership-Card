@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.mainDiv{
+    height: 100svh;
+    width: 100svw;
+    background: #00c3ff;  
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);
+    background: linear-gradient(to right, #ffff1c, #00c3ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.iph1, .iph2{
+    height: 545px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.iph1 > img, .iph2 > img{
+    height: 552px;
+    width: 350px;
+    object-fit: contain;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Card - 1 Stylings */
+
+.bg{
+    position: relative;
+    top: -1%;
+    height: 477px;
+    width: 245px;
+    background-color: gold;
+    background: linear-gradient(to bottom right,#f3a407,gold);
+    z-index: 1;
+    border-radius: 12%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.hc{
+    height: 200px;
+    width: 230px;
+    border-bottom-left-radius: 450px;
+    border-bottom-right-radius: 450px;
+    background-color: rgb(3, 133, 3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    background-image: url("assets/thubImage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1{
+    height: 30px;
+    width: 150px;
+    filter: drop-shadow(2px 0px 1px #222); /*Gives Shadow to Png Images*/
+    margin-top: 15px;
+}
+
+.hc > p{
+    font-size: 25px;
+    font-weight: 600;
+    color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 5px black ;
+    margin-bottom: 3px;
+}
+
+.crown{
+    position: absolute;
+    left: 28.5%;
+    top: 18.4%;
+    height:60px;
+    width: 60px;
+    transform: rotate(-38deg);
+}
+
+.circle{
+    position: ab;
+    top: -10%;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url("assets/DriveReady.jpeg");
+    background-size: cover;
+    box-shadow: 0px 0px 7px black;
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+}
+.info{
+    height: 300px;
+    width: 230px;
+    position: absolute;
+    top:35%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+table{
+    border-collapse: collapse;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+}
+th{
+    font-size: 23px;
+    height: 55px;
+}
+td{
+    height: 30px;
+}
+td > i{
+    font-size: 12px;
+}
+
+.name{
+    font: 18px"Fira Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(15, 89, 247);
+}
+.roll , .dept , .course{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.dr{
+    margin-top: -10px;
+    height: 60px;
+    width: 200px;
+    filter: drop-shadow(1px 1px 0 black)  drop-shadow(-1px -1px 0 white);
+}
+
+.br{
+    margin-top: -15px;
+    height: 30px;
+    width: 140px;
+}
+
+
+/* Card - 2 Stylings */
+
+
+.block{
+    position: relative;
+    top: 7%;
+    border-radius: 50px;
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block > p{
+    position: relative;
+    left: 5%;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    margin: 2px 6px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.inner{
+    position: absolute;
+    top: 7%;
+    left: 68%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner > img{
+    width: 90%;
+    height: 90%;
+    filter: drop-shadow(1px 1px 0 black)  drop-shadow(-1px -1px 0 white);
+    /* transform: rotate(14deg); */
+}
+.about{
+    position: absolute;
+    top:25%;
+    height:350px;
+    width: 220px;
+    /* background-color: black; */
+}
+.venue{
+    color: rgb(210, 30, 162);
+    position: relative;
+    left: 18%;
+    font-size: 25px;
+    font-weight:600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.venuedetails, .venuedetails1{
+    color: darkgreen;
+    position: relative;
+    top: 4%;
+    left: 2%;
+    font-size: 15px;
+    font-weight:900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.venuedetails1{
+    font-size: 14px;
+}
+
+.qr{
+    height: 160px;
+    width: 160px;
+    position: relative;
+    top: -33%;
+    left: 45%;
+    filter: drop-shadow(1px 1px 0 black)  drop-shadow(-1px -1px 0 white);
+}
+
+.guest{
+    color: rgb(210, 30, 162);
+    position: absolute;
+    top: 42%;
+    left: 18%;
+    font-size: 20px;
+    font-weight:600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.vc, .ceo{
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+}
+.ceo{
+    left: 59%;
+}
+
+.welcome{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    position: relative;
+    top: -2%;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(1px 1px 0 white)  drop-shadow(-1px -1px 0 white);
+}
+
+.design{
+    position: relative;
+    top: -4%;
+    left: 12%;
+    height: 60px;
+    width: 160px;
+}
+
+.iph1:hover , .iph2:hover{
+    transform: scale(1.2);
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:739.5px){
+    .mainDiv{
+        height: 210svh;
+    }
+}
+@media only screen and (max-width:425px){
+    .iph1, .iph2{
+        height: 500px;
+        width: 310px;
+    }
+    .iph1 > img ,.iph2 > img{
+        height: 500px;
+        width: 310px;
+    }
+    .bg{
+        height: 440px;
+        width: 216px;
+    }
+    .hc{
+        top: -60%;
+    }
+    .img1{
+        left: 3%;
+        height: 20px;
+        width: 100px;
+    }   
+    .hc > p{
+        top: 21%;
+    }
+    .crown{
+        top: 19.7%;
+        height:50px;
+        width: 50px;
+    }
+    .name{
+        font: 17px"Fira Sans", sans-serif;
+        font-weight: 600;
+    }
+    .roll , .dept , .course{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .dr{
+        height: 50px;
+        width: 170px;
+        filter: drop-shadow(1px 1px 0 black)  drop-shadow(-1px -1px 0 white);
+    }
+    .br{
+        height: 30px;
+        width: 140px;
+    }
+    .venuedetails{
+        left: 4%;
+        font-size: 15px;
+    }
+    .venuedetails1{
+        left: 4%;
+    }
+    .qr{
+        top: -32%;
+        left: 45%;
+        height: 150px;
+        width: 150px;
+    }
+    
+    .vc, .ceo{
+        left: 10%;
+        height: 70px;
+        width: 70px;
+    }
+    .ceo{
+        left: 57%;
+    }
+    
+    .welcome{
+        font-size: 20px;
+    }
+    
+    .design{
+        position: relative;
+        top: -4%;
+        left: 15%;
+        height: 50px;
+        width: 150px;
+    }
+}
